@@ -1,0 +1,59 @@
+STEP 02: IMAGE PREPROCESSING
+========================================================================
+
+INPUT
+------------------------------------------------------------------------
+
+Total samples       : 30
+
+Input format        : RGB
+Input size          : 1024 x 2048 x 3
+
+
+PREPROCESSING PIPELINE
+------------------------------------------------------------------------
+
+1. RGB uint8 -> RGB float32 [0,1]
+2. RGB -> Grayscale
+3. Tikhonov low-pass / high-pass decomposition
+4. Save high-pass component as float32 NPY
+
+No resize, crop, or geometric transformation is performed.
+
+
+PARAMETERS
+------------------------------------------------------------------------
+
+Tikhonov lambda     : 10.0
+Tikhonov padding    : 16
+
+
+OUTPUT
+------------------------------------------------------------------------
+
+High-pass size      : 1024 x 2048
+High-pass dtype     : float32
+
+Mean high-pass std  : 0.03503371
+Mean |high-pass|    : 0.01962870
+
+
+VALIDATION
+------------------------------------------------------------------------
+
+Passed samples      : 30
+Failed samples      : 0
+Errors              : 0
+
+FINAL STATUS        : PASSED
+
+
+NOTE
+------------------------------------------------------------------------
+
+High-pass preprocessing is a project implementation choice following
+common SPORCO convolutional sparse representation practice. It is not
+a mandatory preprocessing step specified by the SCSC paper.
+
+The high-pass arrays generated in this step will be used as the
+convolutional sparse representation input in later CSC / SCSC steps.

@@ -1,0 +1,8 @@
+{
+  "lambda_mode": "data_driven",
+  "lambda_max": 0.39117082953453064,
+  "lambda_ratio": 0.1,
+  "effective_lambda": 0.039117082953453064,
+  "paper_beta_reference": 0.5,
+  "note": "Paper beta=0.5 is retained only as a reference. Effective lambda is adapted to the numerical scale of this project's high-pass signal."
+}

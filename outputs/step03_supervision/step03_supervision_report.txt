@@ -1,0 +1,51 @@
+STEP 03: SUPERVISION PREPARATION
+========================================================================
+
+Training images              : 24
+Validation images used       : 0
+
+SUPERVISION STRATEGY
+------------------------------------------------------------------------
+Maximum points / instance    : 100
+Interior target fraction     : 0.70
+Boundary target fraction     : 0.30
+Negative / positive ratio    : 1.00
+Other-class negative fraction: 0.50
+Random seed                  : 42
+
+CLASS SUMMARY
+------------------------------------------------------------------------
+PERSON
+  Instances            : 252
+  Positive             : 24,929
+  Interior positive    : 17,451
+  Boundary positive    : 7,478
+  Boundary ratio       : 0.3000
+  Negative             : 24,929
+  Background negative  : 12,464
+  Other-class negative : 12,465
+
+CAR
+  Instances            : 224
+  Positive             : 22,120
+  Interior positive    : 15,484
+  Boundary positive    : 6,636
+  Boundary ratio       : 0.3000
+  Negative             : 22,120
+  Background negative  : 11,060
+  Other-class negative : 11,060
+
+MOTORCYCLE
+  Instances            : 47
+  Positive             : 4,700
+  Interior positive    : 3,290
+  Boundary positive    : 1,410
+  Boundary ratio       : 0.3000
+  Negative             : 4,700
+  Background negative  : 2,350
+  Other-class negative : 2,350
+
+VALIDATION
+------------------------------------------------------------------------
+Errors                        : 0
+FINAL STATUS                  : PASSED

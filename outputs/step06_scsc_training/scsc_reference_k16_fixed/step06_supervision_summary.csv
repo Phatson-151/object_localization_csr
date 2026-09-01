@@ -1,0 +1,4 @@
+class_id,class_name,supervision_points,class_balance_factor
+1,person,49858,0.6919518098065173
+2,car,44240,0.779822182037372
+3,motorcycle,9400,3.6701418439716313

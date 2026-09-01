@@ -1,0 +1,4 @@
+split,samples,person_pixels,car_pixels,motorcycle_pixels,person_instances,car_instances,motorcycle_instances
+train,24,833856,3069178,546223,252,224,47
+val,6,175100,538777,159630,39,48,14
+total,30,1008956,3607955,705853,291,272,61

@@ -1,0 +1,62 @@
+STEP 04: UNSUPERVISED CSC BASELINE
+========================================================================
+
+RUN CONFIGURATION
+------------------------------------------------------------------------
+Run name                  : csc_full_reference_k16_auto_lambda
+Training images           : 24
+Model resolution          : 512 x 256
+Scale                     : 0.25
+Filter size               : 11 x 11
+Number of filters K       : 16
+Outer iterations          : 100
+Random seed               : 12345
+
+SPARSITY PARAMETER
+------------------------------------------------------------------------
+Paper beta reference      : 0.5
+Estimated lambda_max      : 3.91170830e-01
+lambda / lambda_max       : 0.10000000
+Effective lambda          : 3.91170830e-02
+Lambda mode               : data_driven
+
+OPTIMIZATION
+------------------------------------------------------------------------
+Sparse coding             : ADMM
+Dictionary update         : Consensus ADMM
+CBPDN rho                 : 2.45585415e+00
+CCMOD rho                 : 1.00000000e+01
+AutoRho                  : Disabled
+CBPDN steps / outer       : 1
+CCMOD steps / outer       : 1
+
+TRAINING RESULT
+------------------------------------------------------------------------
+Solve time (seconds)      : 626.452
+Initial objective         : 9.14283837e+02
+Final objective           : 3.82485352e+02
+Objective relative span   : 5.81655788e-01
+Final data fidelity       : 1.29429672e+02
+Maximum L1                : 8.67204785e+03
+Final L1                  : 6.46918604e+03
+Dictionary rel. change    : 1.09895269e+00
+
+FINAL ADMM DIAGNOSTICS
+------------------------------------------------------------------------
+X primal residual         : 9.15691815e-03
+X dual residual           : 7.16822688e-03
+D primal residual         : 3.10032424e-03
+D dual residual           : 1.31052149e-02
+
+DICTIONARY
+------------------------------------------------------------------------
+Final shape               : (11, 11, 16)
+Filter norm min           : 0.99999970
+Filter norm max           : 1.00000024
+Filter norm mean          : 1.00000000
+
+VALIDATION
+------------------------------------------------------------------------
+Errors                    : 0
+Warnings                  : 0
+FINAL STATUS              : PASSED

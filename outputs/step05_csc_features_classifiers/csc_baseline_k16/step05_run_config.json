@@ -1,0 +1,25 @@
+{
+  "step": 5,
+  "source_step04_run": "csc_full_reference_k16_auto_lambda",
+  "dictionary_shape": [
+    11,
+    11,
+    16
+  ],
+  "num_filters": 16,
+  "scale": 0.25,
+  "effective_lambda": 0.039117082953453064,
+  "cbpdn_rho": 2.455854147672653,
+  "inference_max_iterations": 200,
+  "inference_rel_stop_tol": 0.005,
+  "classifier": "StandardScaler + LogisticRegression",
+  "classifier_C": 1.0,
+  "classifier_max_iterations": 2000,
+  "classifier_cv_folds": 5,
+  "classifier_cv_grouping": "sample_id",
+  "classes": {
+    "1": "person",
+    "2": "car",
+    "3": "motorcycle"
+  }
+}

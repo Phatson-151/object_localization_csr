@@ -1,0 +1,40 @@
+{
+  "step": 6,
+  "source_step04_run": "csc_full_reference_k16_auto_lambda",
+  "training_images": 24,
+  "validation_images_used": 0,
+  "dictionary_shape": [
+    11,
+    11,
+    16
+  ],
+  "num_filters": 16,
+  "filter_size": 11,
+  "scale": 0.25,
+  "lambda": 0.039117082953453064,
+  "outer_iterations": 10,
+  "z_admm_iterations": 30,
+  "z_admm_rho": 1.0,
+  "z_admm_tolerance": 0.0001,
+  "z_cg_max_iterations": 20,
+  "z_cg_tolerance": 0.0001,
+  "logistic_newton_iterations": 12,
+  "dictionary_iterations": 10,
+  "dictionary_rho": 10.0,
+  "alpha": 1.0,
+  "gamma_mode": "data_driven_ratio",
+  "gamma_ratio": 0.1,
+  "effective_gamma": 0.0008373667566297989,
+  "multiclass_strategy": "One-vs-All",
+  "class_balancing": {
+    "1": 0.6919518098065173,
+    "2": 0.779822182037372,
+    "3": 3.6701418439716313
+  },
+  "initial_dictionary": "Same STEP 04 D0 used for unsupervised CSC",
+  "z_solver": "Supervised ADMM + CG + Newton logistic prox + best-primal-objective safeguard",
+  "dictionary_solver": "SPORCO Consensus ADMM ConvCnstrMOD",
+  "stage_objective_relative_tolerance": 1e-05,
+  "final_objective_relative_tolerance": 0.001,
+  "random_seed": 12345
+}

@@ -1,0 +1,4 @@
+class_id,class_name,instances,positive_total,interior_positive,boundary_positive,boundary_ratio,negative_total,background_negative,other_class_negative,total_classifier_samples
+1,person,252,24929,17451,7478,0.29997192025352,24929,12464,12465,49858
+2,car,224,22120,15484,6636,0.3,22120,11060,11060,44240
+3,motorcycle,47,4700,3290,1410,0.3,4700,2350,2350,9400

@@ -1,0 +1,64 @@
+STEP 05: CSC SPARSE FEATURES + ONE-vs-ALL CLASSIFIERS
+========================================================================
+
+INPUT
+------------------------------------------------------------------------
+STEP 04 run              : csc_full_reference_k16_auto_lambda
+Dictionary shape         : (11, 11, 16)
+Training images          : 24
+Validation images        : 6
+Model scale              : 0.25
+Effective lambda         : 3.91170830e-02
+
+SPARSE INFERENCE
+------------------------------------------------------------------------
+Total images inferred    : 30
+Maximum ADMM iterations  : 200
+Relative stop tolerance  : 0.005
+Mean coefficient density : 0.00719538
+Mean solve time / image  : 3.862 s
+
+CLASSIFIERS
+------------------------------------------------------------------------
+Method                    : One-vs-All Logistic Regression
+Feature dimension         : 16 CSC coefficients
+Logistic C                : 1.0
+Grouped CV folds          : 5
+CV grouping               : image / sample_id
+
+PERSON
+  Samples            : 49,858
+  Positive           : 24,929
+  Negative           : 24,929
+  Training AP        : 0.540987
+  5-fold CV AP       : 0.530554
+  CV Precision       : 0.642553
+  CV Recall          : 0.216819
+
+CAR
+  Samples            : 44,240
+  Positive           : 22,120
+  Negative           : 22,120
+  Training AP        : 0.528472
+  5-fold CV AP       : 0.515477
+  CV Precision       : 0.603884
+  CV Recall          : 0.205694
+
+MOTORCYCLE
+  Samples            : 9,400
+  Positive           : 4,700
+  Negative           : 4,700
+  Training AP        : 0.541847
+  5-fold CV AP       : 0.530066
+  CV Precision       : 0.600963
+  CV Recall          : 0.182089
+
+IMPORTANT
+------------------------------------------------------------------------
+Training and cross-validation AP values in STEP 05 are classifier diagnostics on STEP 03 supervision points. They are NOT the final localization AP/mAP.
+The six validation images were never used to fit the logistic regression classifiers.
+Final localization metrics will be measured from full prediction maps against validation ground truth after the CSC and SCSC pipelines are both available.
+
+FINAL STATUS
+------------------------------------------------------------------------
+PASSED

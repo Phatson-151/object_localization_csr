@@ -1,0 +1,58 @@
+STEP 01: DATASET VALIDATION
+========================================================================
+
+Dataset root:
+C:\Documents\Year 4 , Term 1\object_localization_csr\data\processed\pilot_30
+
+Manifest:
+C:\Documents\Year 4 , Term 1\object_localization_csr\data\processed\pilot_30\manifest.csv
+
+
+DATASET SPLIT
+------------------------------------------------------------------------
+
+Total samples       : 30
+Train samples       : 24
+Validation samples  : 6
+
+
+IMAGE INFORMATION
+------------------------------------------------------------------------
+
+Expected resolution : 2048 x 1024
+Channels            : 3 (RGB)
+
+
+TARGET CLASS MAPPING
+------------------------------------------------------------------------
+
+0 = Background
+1 = Person (Cityscapes Person + Rider)
+2 = Car
+3 = Motorcycle
+
+
+PIXEL COUNTS
+------------------------------------------------------------------------
+
+Person pixels       : 1,008,956
+Car pixels          : 3,607,955
+Motorcycle pixels   : 705,853
+
+
+INSTANCE COUNTS
+------------------------------------------------------------------------
+
+Person instances    : 291
+Car instances       : 272
+Motorcycle instances: 61
+
+
+VALIDATION RESULTS
+------------------------------------------------------------------------
+
+Passed samples      : 30
+Failed samples      : 0
+Validation errors   : 0
+
+FINAL STATUS        : PASSED

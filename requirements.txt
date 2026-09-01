@@ -1,0 +1,10 @@
+numpy
+scipy
+pandas
+pillow
+matplotlib
+scikit-image
+scikit-learn
+tqdm
+sporco
+pyfftw
